@@ -1,0 +1,67 @@
+<!DOCTYPE =<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML FORM</title>
+  </head>
+
+  <body>
+    <h1>HTML FORM</h1>
+    <form>
+      <div>
+        <label for="username" >Username </label>
+        <input type="text" id="username" placeholder="username"/>
+      </div>
+      <div>
+        <label for="email">E mail </label>
+        <input type="email" id="email" placeholder="email" />
+      </div>
+      
+      <div>
+        <label for="textarea">MESSAGE</label>
+        <textarea name="" id="textarea" cols="30" rows="10"/></textarea>
+      </div>
+      <input type="submit" value="submit" placeholder="Enter your message"/>
+
+      <div>
+        <label for="password" align="center">PASSWORD</label>
+        <input type="password" id="password" placeholder="password" align="center"/>
+      </div>
+      <div>
+        <label for="number"></label>Ph No.
+        <input type="number" id="number" />
+      </div>
+
+      <!---now in order to select a number or write a number within a given range we will use the below tag-->
+      <div>
+        <label for="number">max sub selection</label>
+        <input type="number" id="number" max="5" min="1" value="1"/>
+      </div>
+ <!---now in order to create a selection tab we have to create the below tag-->
+      <div>
+        <label for="gender">Gender</label>
+        <input type="radio"  name="gender" value="music"/>male
+        <input type="radio"  name="gender" value="sport"/> female
+      </div>
+      <!----there are often cases when the attribute tags can be selected both that may be case when the name=" "is not the same attribute or not provided in the tag, the given tag is hence shown forth where the name parameter is not present leading to selection of both parameter-->
+      <div>
+        <label for="gender">Gender</label>
+        <input type="radio" value="music"/>male
+        <input type="radio" value="sport"/> female[ this is just an example of usage of wrong tag do not apply]
+      </div>
+      <!---the below tag is same as the radio tag just in place of radio we will insert checkbox-->
+      <div>
+        <label for="gender">Gender</label>
+        <input type="checkbox"  name="gender" value="music"/>male
+        <input type="checkbox"  name="gender" value="sport"/> female
+      </div>
+
+
+
+
+
+
+    </form>
+  </body>
+</html>
